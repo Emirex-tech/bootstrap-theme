@@ -1,0 +1,150 @@
+.navbar{
+  margin-bottom: 0;
+  a{
+    color: set-text-color($main-color) !important;
+  }
+  .fab{
+    font-size:18px;
+  }
+}
+
+.showcase{
+  background: url(../jpg/pexels-startup.jpg) no-repeat 0  -100px;
+  height:600px;
+  padding:30px 0;
+
+  h1{
+    font-size:60px;
+  }
+  .container{
+    background:#fff;
+    opacity:0.8;
+    padding: 20px 30px 30px 30px;
+  }
+}
+
+.section-a{
+  padding: 30px 0;
+  text-align: center;
+  background:$main-color;
+  color: set-text-color($main-color);
+  .fab{
+    font-size: $icon-size;
+  }
+}
+
+.section-b{
+  background: #e6ebf1;
+  padding: 30px 0;
+  img{
+    width: 100&;
+  }
+}
+
+.panel-heading h4{
+  color: set-text-color($main-color);
+}
+
+.section-c{
+  padding: 60px 0;
+  text-align:center;
+  background: $main-color;
+  color: set-text-color($main-color);
+
+  .btn-primary{
+    background: darken($main-color, 10%);
+  }
+}
+.error{
+  background: orangered;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+}
+
+.title-bar{
+  background: url(../jpg/pexels-startup.jpg) no-repeat 0  -300px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid $main-color;
+}
+.main{
+  margin-top: 30px;
+}
+footer{
+  padding: 30px 0;
+  background: darken($main-color, 10%);
+  color: set-text-color($main-color);
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.slide-container .slide {
+  display: none;
+  width: 100%;
+}
+
+.slide-container .slide.fade {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide-container .slide img {
+  width: 100%;
+}
+.slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.slide-container .prev {
+  left: 2px;
+}
+
+.slide-container .next {
+  right: 2px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.dots-container .dot {
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  color: #333;
+  border-radius: 50%;
+  background-color: #dfd6ce;
+}
+
+.dots-container .dot.active {
+  border: 2px solid green;
+}
+
